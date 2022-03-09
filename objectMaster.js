@@ -62,10 +62,5 @@ console.log(secondFlying);
 
 // a count of the number of pokémon that are "normal" type
 const countNormal = pokémon
-                        .filter(p => {
-                            if (p.types[0] == "normal") {
-                                return true 
-                            }
-                            return false
-                        }).length;
+                        .filter(p => (p.types[0] == "normal")).length;
 console.log(countNormal);
